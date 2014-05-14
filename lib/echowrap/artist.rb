@@ -69,5 +69,8 @@ module Echowrap
       @years_active ||= map_collection(Echowrap::YearsActive, :years_active)
     end
 
+    def genres
+      @genres ||= map_collection(Echowrap::Genre, :genres)
+    end
   end
 end
