@@ -24,7 +24,7 @@ module Echowrap
       :ssl => {
         :verify => false
       },
-    } unless defined? Echnoest::Default::CONNECTION_OPTIONS
+    } unless defined? Echowrap::Default::CONNECTION_OPTIONS
     IDENTITY_MAP = false unless defined? Echowrap::Default::IDENTITY_MAP
     MIDDLEWARE = Faraday::RackBuilder.new do |builder|
       # Convert file uploads to Faraday::UploadIO objects
